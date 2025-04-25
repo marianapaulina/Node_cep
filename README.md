@@ -12,10 +12,10 @@ O objetivo desta arquitetura é separar a responsabilidade de receber as requisi
 
 A fila AWS SQS (`consulta-cep-fila`) foi utilizada para o envio dos IDs dos registros de CEP para processamento:
 
-![Print da sua fila AWS SQS mostrando mensagens (se houver) e métricas](LINK_PARA_O_PRINT_DA_FILA_AWS)
+<img src="img/aws.png" alt="aws" width="600"/>
 
 O banco de dados MongoDB (`cep_integracao`) contém os registros dos CEPs consultados, indicando o status do processamento e os dados obtidos da API ViaCEP:
 
-![Print da sua collection 'ceps' no MongoDB Compass mostrando registros com status PENDENTE, CONCLUÍDO e/ou REJEITADO](LINK_PARA_O_PRINT_DO_BANCO_MONGO)
+<img src="img/banco.png" alt="banco" width="600"/>
 
 Este projeto demonstra o fluxo completo de uma consulta de CEP, desde o recebimento pela API até o processamento em segundo plano e a atualização do banco de dados com os resultados.
