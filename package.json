@@ -1,0 +1,24 @@
+{
+  "name": "integracao-plugnotas",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start-producer": "node producer/producer.js",
+    "start-consumer": "node consumer/consumer.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@aws-sdk/client-sqs": "^3.796.0",
+    "aws-sdk": "^2.1692.0",
+    "axios": "^1.9.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "integracao-plugnotas": "file:",
+    "mongoose": "^8.13.3"
+  }
+}
